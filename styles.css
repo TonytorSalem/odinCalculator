@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.calculator{
+  border-radius: 20px;
+ 
+}
+
+.screen{
+    pointer-events: none;
+    width: 300px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+
+button{
+   
+    background-color: darkgrey;  
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.btnDivs{
+    background-color: darkgrey; 
+    width: 300px;
+    height: 250px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);  
+    text-align: center;
+   cursor: pointer;
+   grid-template-areas: 
+   ". . . ."
+   "seven eight nine ."
+   "four five six equal"
+   "one two three equal"
+   ". zero dot equal";
+ 
+
+   }
+
+   .number{
+    border-radius: 100%;
+    margin: 5px;
+   }
+
+.equal{
+ background-color: #4a6de0;
+ grid-area: equal;
+ border-radius: 20px;
+ margin: 5px;
+}
+
+.equal:active{
+    background-color: #0f3ac7;
+   }
+   
+
+.clear{
+    color: #4a6de0;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.divide{
+    color: #4a6de0;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.times{
+    color: #4a6de0;
+    border-radius: 100%;
+    margin: 5px;
+}
+.delete{
+    color: #4a6de0;
+    border-radius: 100%;
+    margin: 5px;
+}
+.minus{
+    color: #4a6de0;
+    border-radius: 100%;
+    margin: 5px;
+}
+.plus{
+    color: #4a6de0;
+   border-radius: 100%;
+   margin: 5px;
+ 
+}
+.mod{
+    border-radius: 100%;
+    margin: 5px;
+}
+.decimal{
+    border-radius: 100%;
+    margin: 5px;
+}
+.number:active{
+    background-color: #6d6a6a;
+}
+
+.op:active{
+    background-color: #fff;
+}
+.delete:active{
+    background-color: rgb(145, 102, 102);
+}
+.clear:active{
+    background-color: #755d5d;
+}
+.decimal:active{
+    background-color: #fff;
+}
+
+.prevScreen{
+    font-size: 16px;
+}
