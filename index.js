@@ -25,8 +25,8 @@ opr.forEach((op)=>{
     op.addEventListener('click',function(e){
         handleOprator(e.target.textContent)
       
-            prevScreen.textContent = prevValue + ' ' + operator;
-            currentScreen.textContent = currentValue;
+            prevScreen.textContent += prevValue + ' ' + operator;
+            currentScreen.textContent += currentValue;
         
             prevScreen.classList.add('prevScreen')
         
@@ -59,7 +59,7 @@ equal.addEventListener("click", function(){
 
 decimal.addEventListener("click", function(){
     addDecimal();
-    
+
 })
 
 
